@@ -1,0 +1,12 @@
+<p>user works!</p>
+
+<div>
+    <h4>User with name {{user.name}} and id is {{user.id}}</h4>
+</div>
+<a [routerLink]="[1,'leela']" [queryParams]="{page:11,search:'leelaa'}" [fragment]="'loading'">Get Details of leela</a>
+
+<button (click)="getDetailsOfRama()">Get Details of Rama</button>
+<div>
+
+    <button class="btn btn-primary" (click)="onNavigateToEditProfile()">Edit profile </button>
+</div>

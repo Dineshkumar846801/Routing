@@ -1,0 +1,15 @@
+<p>users works!</p>
+<button (click)="goNavigateCategories()">Go to categories</button>
+
+<ul class="nav flex-column">
+    <li class="nav-item"><a [routerLink]="[  3, 'Leela']" [queryParams]="{page:1,search:'Leela'}"
+            [fragment]="'Load'">Get Leela Details</a></li>
+    <li class="nav-item"><a [routerLink]="[  5, 'Rama']" [queryParams]="{page:1,search:'Rama'}" [fragment]="'Load'">Get
+            Rama Details</a></li>
+    <li class="nav-item"><a [routerLink]="[  3, 'Other']" [queryParams]="{page:1,search:'Other'}"
+            [fragment]="'Load'">Get Others Details</a></li>
+
+</ul>
+<div>
+    <router-outlet></router-outlet>
+</div>
